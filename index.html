@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="William Andrade - Construção e Reformas com excelência, transparência e qualidade. Orçamento online rápido e transparente.">
+    <title>William Andrade | Construção & Reformas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/5542984058422"
+target="_blank"
+id="Whatsapp"
+aria-label="WhatsApp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- VOLTAR AO TOPO -->
+<button id="scrollTop">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-box">
+        <div class="loader-circle"></div>
+        <h2>William Andrade</h2>
+        <p>Construção & Reformas</p>
+    </div>
+</div>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="logo-container">
+            <span class="logo">🏗️</span>
+            <div>
+                <div class="company-name">WILLIAM ANDRADE</div>
+                <small>Construção & Reformas</small>
+            </div>
+        </div>
+        <nav class="nav-desktop">
+            <a href="#oque-faco">Serviços</a>
+            <a href="#como-funciona">Como Funciona</a>
+            <a href="#numeros">Números</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button onclick="goToSection('orcamento')" class="cta-button header-cta">Fazer Orçamento</button>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content" id="menuContent">
+            <div class="menu-close" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+            <div class="menu-item" onclick="goToSection('hero')"><i class="fas fa-home"></i> Início</div>
+            <div class="menu-item" onclick="goToSection('oque-faco')"><i class="fas fa-tools"></i> Serviços</div>
+            <div class="menu-item" onclick="goToSection('como-funciona')"><i class="fas fa-list-ol"></i> Como Funciona</div>
+            <div class="menu-item" onclick="goToSection('numeros')"><i class="fas fa-chart-bar"></i> Números</div>
+            <div class="menu-item" onclick="goToSection('orcamento')"><i class="fas fa-calculator"></i> Orçamento Online</div>
+            <div class="menu-item" onclick="goToSection('galeria')"><i class="fas fa-images"></i> Galeria</div>
+            <div class="menu-item" onclick="goToSection('depoimentos')"><i class="fas fa-star"></i> Depoimentos</div>
+            <div class="menu-item" onclick="goToSection('faq')"><i class="fas fa-question-circle"></i> FAQ</div>
+            <div class="menu-item" onclick="goToSection('contato')"><i class="fas fa-envelope"></i> Contato</div>
+            <a href="https://wa.me/5542984058422" class="menu-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-badge">⭐ +15 Anos de Experiência</span>
+            <h1>Construindo Sonhos com Excelência</h1>
+            <p>Profissionalismo, transparência e qualidade em cada etapa da sua obra. Do alicerce ao acabamento final.</p>
+            <div class="hero-buttons">
+                <button onclick="goToSection('orcamento')" class="cta-button hero-cta-primary">
+                    <i class="fas fa-calculator"></i> Fazer Orçamento Grátis
+                </button>
+                <button onclick="goToSection('galeria')" class="cta-button-outline">
+                    <i class="fas fa-images"></i> Ver Nossos Projetos
+                </button>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#f8fafc"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="promo-banner">
+        <div class="promo-inner">
+            <div class="promo-text">
+                <i class="fas fa-percentage"></i>
+                <div>
+                    <strong>PROMOÇÃO DO MÊS!</strong>
+                    <span>10% de desconto em reformas completas — Válido até o fim do mês</span>
+                </div>
+            </div>
+            <a href="https://wa.me/5542984058422?text=Olá! Vi a promoção do mês e gostaria de saber mais!" target="_blank" class="promo-btn">
+                Aproveitar Agora <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- O QUE FAÇO -->
+    <section class="section" id="oque-faco">
+        <h2>Nossos Serviços</h2>
+        <p class="section-subtitle">Atuo desde a fundação até o acabamento final, entregando obras completas com padrão elevado.</p>
+        <div class="services-grid">
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Fundação e Terraplanagem</h3>
+                <p>Sapata, radier, estaca, baldrame</p>
+                <span class="service-price">A partir de R$ 120/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <span class="badge-popular">Popular</span>
+                <div class="service-icon"><i class="fas fa-building"></i></div>
+                <h3>Estrutura e Laje</h3>
+                <p>Concreto armado, metálica, pré-moldada</p>
+                <span class="service-price">A partir de R$ 250/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                <h3>Alvenaria</h3>
+                <p>Bloco cerâmico, concreto, drywall</p>
+                <span class="service-price">A partir de R$ 95/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <span class="badge-popular">Popular</span>
+                <div class="service-icon"><i class="fas fa-home"></i></div>
+                <h3>Cobertura e Telhado</h3>
+                <p>Colonial, fibrocimento, galvanizada, shingle</p>
+                <span class="service-price">A partir de R$ 85/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Instalação Elétrica</h3>
+                <p>Embutida, aparente, mista</p>
+                <span class="service-price">A partir de R$ 65/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <div class="service-icon"><i class="fas fa-faucet"></i></div>
+                <h3>Instalação Hidráulica</h3>
+                <p>PVC, PPR, cobre, PEX</p>
+                <span class="service-price">A partir de R$ 55/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <span class="badge-popular">Popular</span>
+                <div class="service-icon"><i class="fas fa-border-all"></i></div>
+                <h3>Porcelanato e Piso</h3>
+                <p>Polido, acetinado, cerâmica, vinílico</p>
+                <span class="service-price">A partir de R$ 75/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                <h3>Reboco e Pintura</h3>
+                <p>Acrílica, látex, epóxi, textura</p>
+                <span class="service-price">A partir de R$ 35/m²</span>
+            </div>
+            <div class="service-card reveal" onclick="goToSection('orcamento')">
+                <span class="badge-destaque">Mais Pedido</span>
+                <div class="service-icon"><i class="fas fa-tools"></i></div>
+                <h3>Reforma Completa</h3>
+                <p>Básica, intermediária e premium</p>
+                <span class="service-price">A partir de R$ 280/m²</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section section-gray" id="como-funciona">
+        <h2>Como Funciona</h2>
+        <p class="section-subtitle">Processo simples e transparente do início ao fim</p>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-number">1</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-phone-alt"></i> Contato</h3>
+                    <p>Entre em contato pelo WhatsApp ou formulário. Conte-nos sobre seu projeto.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-number">2</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-search-location"></i> Visita Técnica</h3>
+                    <p>Nossa equipe vai até o local para avaliar o projeto e tirar medidas.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-number">3</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-file-invoice-dollar"></i> Orçamento Detalhado</h3>
+                    <p>Enviamos um orçamento completo e transparente, sem surpresas.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-number">4</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-hammer"></i> Execução da Obra</h3>
+                    <p>Mão de obra qualificada com acompanhamento diário e relatórios de progresso.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-number">5</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-check-circle"></i> Entrega e Garantia</h3>
+                    <p>Entrega no prazo com garantia de serviço e suporte pós-obra.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="section section-dark" id="numeros">
+        <h2 style="color:white;">Nossos Números</h2>
+        <div class="stats-grid">
+            <div class="stat-card reveal">
+                <i class="fas fa-hard-hat"></i>
+                <span class="stat-number" data-target="200">0</span>
+                <span class="stat-label">Obras Realizadas</span>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Anos de Experiência</span>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fas fa-users"></i>
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Clientes Satisfeitos</span>
+            </div>
+            <div class="stat-card reveal">
+                <i class="fas fa-star"></i>
+                <span class="stat-number" data-target="98">0</span>
+                <span class="stat-label">% de Aprovação</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section" id="beneficios">
+        <h2>Por que Escolher William Andrade</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-clock"></i></div>
+                <strong>Prazo Cumprido</strong>
+                <p>Compromisso com cronograma rigoroso em todas as etapas</p>
+            </div>
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <strong>Orçamento Transparente</strong>
+                <p>Sem surpresas — você sabe exatamente o que está pagando</p>
+            </div>
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-gem"></i></div>
+                <strong>Materiais de Primeira</strong>
+                <p>Trabalhamos com as melhores marcas do mercado</p>
+            </div>
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-user-tie"></i></div>
+                <strong>Equipe Qualificada</strong>
+                <p>Profissionais treinados e com vasta experiência</p>
+            </div>
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                <strong>Garantia dos Serviços</strong>
+                <p>Garantia em todos os serviços executados</p>
+            </div>
+            <div class="benefit-card reveal">
+                <div class="benefit-icon"><i class="fas fa-eye"></i></div>
+                <strong>Acompanhamento Total</strong>
+                <p>Relatórios de progresso e visitas frequentes à obra</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section class="section section-gray" id="orcamento">
+        <h2>Orçamento Online Interativo</h2>
+        <p class="section-subtitle">Selecione o serviço, escolha o tipo de material e calcule o valor estimado da sua obra</p>
+
+        <!-- Step 1: Lista de Serviços -->
+        <div id="step-servicos">
+            <div class="orcamento-grid" id="servicos-list"></div>
+        </div>
+
+        <!-- Step 2: Tabela de Tipos -->
+        <div id="step-tipos" style="display:none;">
+            <button onclick="voltarServicos()" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar aos Serviços</button>
+            <h3 id="tipo-titulo" class="step-title"></h3>
+            <p class="step-subtitle">Selecione o tipo desejado na tabela abaixo:</p>
+            <div class="table-container">
+                <table id="tabela-tipos" class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Preço / m²</th>
+                            <th>Descrição</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Step 3: Cálculo -->
+        <div id="step-calculo" style="display:none;">
+            <button onclick="voltarTipos()" class="btn-voltar"><i class="fas fa-arrow-left"></i> Voltar aos Tipos</button>
+            <div class="calc-card">
+                <div class="calc-header">
+                    <h3 id="calc-servico"></h3>
+                    <span class="calc-tipo-badge" id="calc-tipo"></span>
+                    <span class="calc-preco" id="calc-preco"></span>
+                </div>
+                <div class="calc-input-group">
+                    <div class="calc-input-group">
+    <label>Desconto (%)</label>
+    <input
+        type="number"
+        id="desconto"
+        placeholder="0"
+        min="0"
+        max="100">
+</div>
+
+<div class="calc-input-group">
+    <label>Mão de obra (%)</label>
+    <input
+        type="number"
+        id="maoObra"
+        placeholder="20"
+        value="20"
+        min="0">
+</div>
+                    <label for="metros">Quantos metros quadrados (m²)?</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                        <input type="number" id="metros" placeholder="Ex: 120" min="1">
+                        <span class="input-suffix">m²</span>
+                    </div>
+                </div>
+                <button onclick="calcularTotal()" class="btn-calcular" id="btn-calcular">
+                    <i class="fas fa-calculator"></i> Calcular Total Estimado
+                </button>
+                <div id="resultado" <div id="resumoValores"></div>
+                class="result-card" style="display:none;"></div>
+                <a id="whatsapp-orcamento" href="#" target="_blank" class="btn-whatsapp-orcamento" style="display:none;">
+                    <i class="fab fa-whatsapp"></i> Enviar Orçamento pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+        <h2>Galeria de Obras</h2>
+        <p class="section-subtitle">Confira alguns dos nossos projetos realizados</p>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Obra 1" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Construção Residencial</span></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="Obra 2" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Projeto Arquitetônico</span></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Obra 3" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Obra Comercial</span></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1585128903994-9788298932a4?w=600&q=80" alt="Obra 4" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Reforma Residencial</span></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Obra 5" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Acabamento Premium</span></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Obra 6" loading="lazy">
+                <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Estrutura Metálica</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <img id="lightbox-img" src="" alt="Imagem ampliada">
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section-gray" id="depoimentos">
+        <h2>O que Nossos Clientes Dizem</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial reveal">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"O William entregou nossa casa dentro do prazo e com qualidade excepcional. Recomendo de olhos fechados!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JM</div>
+                    <div>
+                        <strong>João Mendes</strong>
+                        <span>Ponta Grossa, PR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Profissionalismo impressionante. Orçamento transparente e obra impecável. Muito satisfeito com tudo!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AC</div>
+                    <div>
+                        <strong>Ana Clara Silva</strong>
+                        <span>Castro, PR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial reveal">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Reforma completa da minha cozinha ficou perfeita. Atendimento de alto nível do início ao fim."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RA</div>
+                    <div>
+                        <strong>Roberto Almeida</strong>
+                        <span>Ponta Grossa, PR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="section" id="parceiros">
+        <h2>Marcas Parceiras</h2>
+        <p class="section-subtitle">Trabalhamos com os melhores materiais do mercado</p>
+        <div class="partners-grid">
+            <div class="partner-card reveal"><i class="fas fa-paint-roller"></i><span>Suvinil</span></div>
+            <div class="partner-card reveal"><i class="fas fa-border-all"></i><span>Portobello</span></div>
+            <div class="partner-card reveal"><i class="fas fa-bolt"></i><span>Tigre</span></div>
+            <div class="partner-card reveal"><i class="fas fa-faucet"></i><span>Deca</span></div>
+            <div class="partner-card reveal"><i class="fas fa-cubes"></i><span>Votoran</span></div>
+            <div class="partner-card reveal"><i class="fas fa-home"></i><span>Eternit</span></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-gray" id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-container">
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Qual o prazo médio de uma obra residencial?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O prazo varia conforme o tamanho e complexidade do projeto. Uma casa de 100m² leva em média 4 a 6 meses. Reformas menores podem ser concluídas em semanas. Sempre fornecemos um cronograma detalhado antes do início.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>O orçamento online é o valor final?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O orçamento online é uma estimativa inicial baseada nos valores médios de mercado. O valor final é definido após a visita técnica, onde avaliamos as condições do local e especificidades do projeto.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Vocês oferecem garantia nos serviços?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim! Todos os nossos serviços possuem garantia. Estrutural de 5 anos, acabamentos de 1 ano e instalações de 2 anos. Qualquer problema dentro do período, resolvemos sem custo adicional.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Quais formas de pagamento são aceitas?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Aceitamos pagamento à vista (com desconto), transferência bancária, PIX e parcelamento conforme andamento da obra (por etapas). Condições especiais para obras maiores.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Atendem quais regiões?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Atendemos Ponta Grossa e toda a região dos Campos Gerais, incluindo Castro, Carambeí, Tibagi e cidades próximas. Para projetos maiores, avaliamos outras localidades.</p>
+                </div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Posso acompanhar o andamento da obra?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Claro! Enviamos relatórios semanais com fotos e vídeos do progresso. Além disso, você pode visitar a obra a qualquer momento. Transparência total é nosso compromisso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+        <h2>Entre em Contato</h2>
+        <div class="contact-grid">
+            <a href="https://wa.me/5542984058422?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="contact-card reveal">
+                <i class="fab fa-whatsapp"></i>
+                <strong>WhatsApp</strong>
+                <span>(42) 98405-8422</span>
+            </a>
+            <a href="https://instagram.com/william.construções" target="_blank" class="contact-card contact-instagram reveal">
+                <i class="fab fa-instagram"></i>
+                <strong>Instagram</strong>
+                <span>@william.construções</span>
+            </a>
+            <a href="tel:+5542984058422" class="contact-card contact-phone reveal">
+                <i class="fas fa-phone-alt"></i>
+                <strong>Telefone</strong>
+                <span>(42) 98405-8422</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo">🏗️</span>
+                <div>
+                    <strong>WILLIAM ANDRADE</strong>
+                    <span>Construção & Reformas</span>
+                </div>
+            </div>
+            <p>Profissionalismo e qualidade que você pode confiar</p>
+            <div class="footer-links">
+                <a href="#oque-faco">Serviços</a>
+                <a href="#orcamento">Orçamento</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/5542984058422" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/william.construções" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy">© 2026 William Andrade • Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/5542984058422?text=Olá! Gostaria de solicitar um orçamento." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
